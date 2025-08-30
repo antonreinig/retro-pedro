@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import { v4 as uuidv4 } from "uuid";
 
 // UI components
@@ -24,8 +23,6 @@ import useAudioDownload from "./hooks/useAudioDownload";
 import { useHandleSessionHistory } from "./hooks/useHandleSessionHistory";
 
 function App() {
-  const searchParams = useSearchParams()!;
-
   // Codec is fixed to Opus; selection UI has been removed.
 
   const {
