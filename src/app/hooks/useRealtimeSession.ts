@@ -65,12 +65,8 @@ export function useRealtimeSession(callbacks: RealtimeSessionCallbacks = {}) {
     }
   }
 
-  const codecParamRef = useRef<string>(
-    (typeof window !== 'undefined'
-      ? (new URLSearchParams(window.location.search).get('codec') ?? 'opus')
-      : 'opus')
-      .toLowerCase(),
-  );
+  // Codec selection UI has been removed; always use Opus.
+  const codecParamRef = useRef<string>('opus');
 
   // Wrapper to pass current codec param
   const applyCodec = useCallback(
