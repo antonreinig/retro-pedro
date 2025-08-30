@@ -1,6 +1,6 @@
-# Realtime API Agents Demo
+# RetroPetro
 
-This is a demonstration of more advanced patterns for voice agents, using the OpenAI Realtime API and the OpenAI Agents SDK. 
+RetroPetro is a demonstration of more advanced patterns for voice agents, using the OpenAI Realtime API and the OpenAI Agents SDK.
 
 ## About the OpenAI Agents SDK
 

@@ -3,8 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { v4 as uuidv4 } from "uuid";
 
-import Image from "next/image";
-
 // UI components
 import Transcript from "./components/Transcript";
 import BottomToolbar from "./components/BottomToolbar";
@@ -403,18 +401,14 @@ function App() {
           className="flex items-center cursor-pointer"
           onClick={() => window.location.reload()}
         >
-          <div>
-            <Image
-              src="/openai-logomark.svg"
-              alt="OpenAI Logo"
-              width={20}
-              height={20}
-              className="mr-2"
-            />
+          <div
+            className="text-lg mr-2"
+            role="img"
+            aria-label="telescope"
+          >
+            🔭
           </div>
-          <div>
-            Realtime API <span className="text-gray-500">Agents</span>
-          </div>
+          <div>RetroPetro</div>
         </div>
         <div className="flex items-center">
           <label className="flex items-center text-base gap-1 mr-2 font-medium">
